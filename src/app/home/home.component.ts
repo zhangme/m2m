@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'home-component',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: [ './home.component.scss' ]
 })
 
-export class HomeComponent {
-  title = 'home';
+export class HomeComponent implements AfterViewInit {
+  ngAfterViewInit(){
+      showCanvas();
+  }
 }
