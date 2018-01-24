@@ -133,9 +133,9 @@ function showCanvas(){
 	    together.setMilliseconds(1);				//秒第二位
 
 	    //$("#code").show().typewriter();
+        $("#home-foot").show();
         $("#clock-box").fadeIn(500);
         while (true) {
-            console.log(together);
             timeElapse(together);
             $await(Jscex.Async.sleep(1000));
         }
