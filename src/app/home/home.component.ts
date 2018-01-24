@@ -1,4 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
+declare var showCanvas: any;
 
 @Component({
   selector: 'home-component',

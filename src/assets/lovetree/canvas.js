@@ -132,7 +132,7 @@ function showCanvas(){
 	    together.setSeconds(2);					//秒前一位
 	    together.setMilliseconds(1);				//秒第二位
 
-	    $("#code").show().typewriter();
+	    //$("#code").show().typewriter();
         $("#clock-box").fadeIn(500);
         while (true) {
             console.log(together);
