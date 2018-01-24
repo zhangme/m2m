@@ -125,15 +125,17 @@ function showCanvas(){
 
     var textAnimate = eval(Jscex.compile("async", function () {
 	    var together = new Date();
-	    together.setFullYear(2017,11,18); 			//时间年月日
+        console.log(together);
+	    together.setFullYear(2017,10,18); 			//时间年月日
 	    together.setHours(10);						//小时
 	    together.setMinutes(5);					//分钟
 	    together.setSeconds(2);					//秒前一位
 	    together.setMilliseconds(1);				//秒第二位
 
-	    //$("#code").show().typewriter();
+	    $("#code").show().typewriter();
         $("#clock-box").fadeIn(500);
         while (true) {
+            console.log(together);
             timeElapse(together);
             $await(Jscex.Async.sleep(1000));
         }
