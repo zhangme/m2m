@@ -125,7 +125,6 @@ function showCanvas(){
 
     var textAnimate = eval(Jscex.compile("async", function () {
 	    var together = new Date();
-        console.log(together);
 	    together.setFullYear(2017,10,18); 			//时间年月日
 	    together.setHours(10);						//小时
 	    together.setMinutes(5);					//分钟

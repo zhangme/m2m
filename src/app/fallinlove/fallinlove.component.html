@@ -1,4 +1,66 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/home" routerLinkActive="active">Dashboard</a>
-</nav>
+<div id="back">
+    <div class="mask"></div>
+    <!-- 设置展示的图片，github pages不能有后台程序只能一条一条手动添加了 囧 -->
+    <div id="carousel"  class="carousel slide carousel-fade carousel-position">
+        <div class="carousel-inner" style="width: 100%;height: 100%;" id="background">
+            <div class="item active" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background:url(assets/images/together/start.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/1.JPG) ;background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/2.JPG) ;background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/3.JPG) ;background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/4.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/5.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/6.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/7.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/8.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/9.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/10.JPG);background-size: cover;"></div>
+            </div>
+            <div class="item" style="width: 100%;height: 100%;">
+                <div style="width: 100%;height: 100%;background-image: url(assets/images/together/end.JPG);background-size: cover;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal show" style="top:24%;">
+    <div class="modal-dialog" style="opacity: .9">
+        <div class="modal-content" style="opacity:.85">
+            <div class="modal-header">
+                <h1 class="text-center" style="color: #A94442;font-family: 'JournalRegular', Arial, sans-serif;font-size: 7rem;">Journey of M&M</h1>
+                <!-- <p class="text-center small-title">M & M</p> -->
+                <a routerLink="/home" routerLinkActive="active">
+                    <p class="text-center small-title">回</p>
+                </a>
+            </div>
+            <div class="modal-body text-center" style="line-height: 1.5rem;font-family: 'JournalRegular', Arial, sans-serif;font-size: 3rem;">
+                <!-- <p>
+                    <span id="day" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="hour" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="minute" class="time-font"></span><span style="color:#A94442">/&nbsp;</span><span id="second" class="time-font"></span>
+                </p>
+                <p>
+                    days/hours/min/sec
+                </p> -->
+                <p class="text-center" style="color:#A94442;font-size: 17px" id="say"></p>
+            </div>
+        </div>
+    </div>
+</div>
