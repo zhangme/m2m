@@ -1,7 +1,7 @@
   /*载入字体*/
   @font-face {
       font-family: 'JournalRegular';
-      src: url('assets/album/fonts/journal-webfont.eot');
+      src: url('assets/journey/fonts/journal-webfont.eot');
       /* src: url('assets/album/fonts/journal-webfont_162a16fe.eot') format('embedded-opentype'), url('assets/album/fonts/journal-webfont.woff') format('woff'), url('assets/album/fonts/journal-webfont.ttf') format('truetype'), url('assets/album/fonts/journal-webfont.svg') format('svg'); */
       font-weight: normal;
       font-style: normal;

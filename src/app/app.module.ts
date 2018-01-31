@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent }         from './app.component';
 import { HomeComponent }   from './home/home.component';
-import { FallinloveComponent }   from './fallinlove/fallinlove.component';
+import { JourneyComponent }   from './journey/journey.component';
+import { BirthDay1Component }   from './birthday/birthday1.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -15,12 +16,13 @@ import { AppRoutingModule }     from './app-routing.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule
   ],
   declarations: [
     AppComponent,
     HomeComponent,
-    FallinloveComponent
+    JourneyComponent,
+    BirthDay1Component
   ],
   bootstrap: [ AppComponent ]
 })
