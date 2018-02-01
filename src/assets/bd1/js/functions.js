@@ -395,6 +395,9 @@ function bd1Main(){
         $("#copyright").css("bottom", "10px");
         document.execCommand("stop");
     } else {
+
+		$('#btn-play').click();$('#btn-play').click();
+
         setTimeout(function () {
             startHeartAnimation();
         }, 6000);
