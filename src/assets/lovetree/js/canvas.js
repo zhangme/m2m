@@ -1,4 +1,9 @@
 function showCanvas(){
+
+    for (var i = 1; i < 99999; i++) {
+        window.clearInterval(i);
+    }
+
     var canvas = $('#canvas');
 
     if (!canvas[0].getContext) {
@@ -125,8 +130,8 @@ function showCanvas(){
 
     var textAnimate = eval(Jscex.compile("async", function () {
 	    var together = new Date();
-	    together.setFullYear(2017,10,18); 			//时间年月日
-	    together.setHours(10);						//小时
+	    together.setFullYear(2017,10,17); 			//时间年月日
+	    together.setHours(21);						//小时
 	    together.setMinutes(5);					//分钟
 	    together.setSeconds(2);					//秒前一位
 	    together.setMilliseconds(1);				//秒第二位

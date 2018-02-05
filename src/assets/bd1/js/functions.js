@@ -1,5 +1,6 @@
 function bd1Main(){
 
+    clearProcess();
 
 	function Garden(ctx, element) {
 		this.blooms = [];
