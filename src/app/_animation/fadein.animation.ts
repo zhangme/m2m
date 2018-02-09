@@ -1,14 +1,17 @@
-import { trigger, state, animate, transition, style } from '@angular/animations';
+import { trigger, state, animate, transition, query, group, style } from '@angular/animations';
 
 export const fadeInAnimation =
-    trigger('fadeInAnimation', [
-        // route 'enter' transition
-        transition(':enter', [
-
-            // styles at start of transition
-            style({ opacity: 0 }),
-
-            // animation and styles at end of transition
-            animate('2s', style({ opacity: 1 }))
-        ]),
+    trigger('routerTransition', [
+        transition('* <=> *', [
+            query(':enter, :leave', style({ position: 'fixed', opacity: 1 })),
+            group([
+              query(':enter', [
+                style({ opacity:0 }),
+                animate('1000ms ease-in-out', style({ opacity:1 }))
+              ]),
+              query(':leave', [
+                style({ opacity:1 }),
+                animate('1000ms ease-in-out', style({ opacity:0 }))]),
+            ])
+        ])
     ]);

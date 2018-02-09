@@ -3,8 +3,8 @@ a {color:#000;font-size:14px;}
 #main{width:100%;}
 #wrap{position:relative;margin:0 auto;width:1100px;height:680px;margin-top:10px;}
 #text{width:400px;height:425px;left:60px;top:80px;position:absolute;}
-#home-foot{display:none;left:10px;top:20px;position:absolute;}
-#home-foot .foot{width:100px;}
+#home-foot{display:none;left:60px;top:80px;position:absolute;}
+#home-foot .foot{width:50%;}
 /* #code{display:none;font-size:16px;} */
 #clock-box {position:absolute;left:60px;top:550px;font-size:28px;display:none;}
 #clock-box a {font-size:28px;text-decoration:none;}
@@ -16,3 +16,26 @@ a {color:#000;font-size:14px;}
 .hand{cursor:pointer;}
 .say{margin-left:5px;}
 .space{margin-right:150px;}
+
+.cover {
+  position: absolute;
+  top: -130px;
+  left: 0;
+  background: #ffe;
+  height: 600px;
+  width: 300px;
+  animation: walk 12s steps(6, end) infinite;
+  -webkit-animation: walk 12s steps(6, end) infinite;
+}
+
+@keyframes walk {
+  to {
+    transform: translateY(-550px);
+  }
+}
+
+@-webkit-keyframes walk {
+  to {
+    -webkit-transform: translateY(-550px);
+  }
+}

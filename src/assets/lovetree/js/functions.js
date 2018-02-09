@@ -1,3 +1,4 @@
+function addFunctions(){
 /*
  * http://love.hackerzhou.me
  */
@@ -37,6 +38,8 @@ $(window).resize(function() {
 	};
 })(jQuery);
 
+};
+
 function timeElapse(date){
 	var current = Date();
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
@@ -55,6 +58,6 @@ function timeElapse(date){
 	if (seconds < 10) {
 		seconds = "0" + seconds;
 	}
-	var result = "<span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 <span class=\"digit\">" + seconds + "</span> 秒<span class=\"nondigit\">了</span>"; 
+	var result = "<span class=\"digit\">" + days + "</span> 天 <span class=\"digit\">" + hours + "</span> 小时 <span class=\"digit\">" + minutes + "</span> 分钟 <span class=\"digit\">" + seconds + "</span> 秒<span class=\"nondigit\">了</span>";
 	$("#clock").html(result);
 }

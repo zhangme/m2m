@@ -1,7 +1,10 @@
 function showCanvas(){
+    addFunctions();
+    clearProcess();
 
-    for (var i = 1; i < 99999; i++) {
-        window.clearInterval(i);
+    var playTabi = function(){
+        var audio = document.getElementById("main_audio");
+        audio.play();
     }
 
     var canvas = $('#canvas');
@@ -81,6 +84,7 @@ function showCanvas(){
             seed.scale(0.95);
             $await(Jscex.Async.sleep(10));
         }
+        playTabi();
         while (seed.canMove()) {
             seed.move(0, 2);
             foot.draw();
@@ -136,7 +140,7 @@ function showCanvas(){
 	    together.setSeconds(2);					//秒前一位
 	    together.setMilliseconds(1);				//秒第二位
 
-	    //$("#code").show().typewriter();
+	    // $("#code").show().typewriter();
         $("#home-foot").show();
         $("#clock-box").fadeIn(500);
         while (true) {
