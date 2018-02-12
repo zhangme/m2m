@@ -9,7 +9,8 @@ import { AppComponent }         from './app.component';
 import { LoveTreeComponent }   from './lovetree/lovetree.component';
 import { HomeComponent }   from './home/home.component';
 import { JourneyComponent }   from './journey/journey.component';
-import { BirthDay1Component }   from './birthday/birthday1.component';
+import { BirthDay1Component }   from './birthday1/birthday1.component';
+import { GalleryComponent }   from './gallery/gallery.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 import {SidebarModule} from 'primeng/sidebar';
@@ -29,7 +30,8 @@ import {SidebarModule} from 'primeng/sidebar';
     LoveTreeComponent,
     HomeComponent,
     JourneyComponent,
-    BirthDay1Component
+    BirthDay1Component,
+    GalleryComponent
   ],
   bootstrap: [ AppComponent ]
 })

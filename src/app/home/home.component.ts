@@ -12,7 +12,7 @@ export class HomeComponent implements AfterViewInit {
     ngAfterViewInit(){
         clearProcess();
     }
-    isibleSidebar: boolean = false;
+    visibleSidebar: boolean = false;
     tempSidebar: boolean = false;
 
 }
