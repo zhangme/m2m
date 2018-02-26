@@ -1,6 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 
 declare var showCanvas: any;
+declare var clearProcess: any;
 
 @Component({
   selector: 'lovetree-component',
@@ -10,6 +11,7 @@ declare var showCanvas: any;
 
 export class LoveTreeComponent implements AfterViewInit {
   ngAfterViewInit(){
+      clearProcess();
       showCanvas();
   }
 }

@@ -6,14 +6,16 @@ import { HomeComponent }   from './home/home.component';
 import { JourneyComponent }   from './journey/journey.component';
 import { BirthDay1Component }   from './birthday1/birthday1.component';
 import { GalleryComponent }   from './gallery/gallery.component';
+import { ProposalComponent }   from './proposal/proposal.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/lovetree', pathMatch: 'full' },
+  { path: '', redirectTo: 'lovetree', pathMatch: 'full' },
   { path: 'lovetree', component: LoveTreeComponent },
   { path: 'home',  component: HomeComponent },
   { path: 'journey',  component: JourneyComponent },
   { path: 'birthday1',  component: BirthDay1Component },
-  { path: 'gallery', component: GalleryComponent }
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'proposal', component: ProposalComponent }
 ];
 
 @NgModule({

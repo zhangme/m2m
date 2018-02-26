@@ -11,9 +11,10 @@ import { HomeComponent }   from './home/home.component';
 import { JourneyComponent }   from './journey/journey.component';
 import { BirthDay1Component }   from './birthday1/birthday1.component';
 import { GalleryComponent }   from './gallery/gallery.component';
+import { ProposalComponent }   from './proposal/proposal.component';
 
 import { AppRoutingModule }     from './app-routing.module';
-import {SidebarModule} from 'primeng/sidebar';
+import { SidebarModule } from 'primeng/sidebar';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import {SidebarModule} from 'primeng/sidebar';
     HomeComponent,
     JourneyComponent,
     BirthDay1Component,
-    GalleryComponent
+    GalleryComponent,
+    ProposalComponent
   ],
   bootstrap: [ AppComponent ]
 })
