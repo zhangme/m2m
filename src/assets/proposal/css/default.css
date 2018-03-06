@@ -1,3 +1,37 @@
+.heart {
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  background-image:url(../images/heartAnimation.png);
+  background-position: left;
+  background-repeat:no-repeat;
+  background-size:2900%;
+}
+
+.heart:hover {
+  background-position:right;
+}
+
+.is_animating {
+  animation: heart-burst 1s steps(28) 1;
+}
+
+@keyframes heart-burst {
+  from {background-position:left;}
+  to { background-position:right;}
+}
+
+.stage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
 #proposalDiv{
     position:fixed;
     padding:0;
@@ -8,6 +42,20 @@
 
     width: 100%;
     height: 100%;
-    
-    background: url(../images/lovep.jpg);}
-.quotes {display: none;}
+
+    background: url(../images/lovep.jpg);
+}
+
+#words{
+    position: absolute;
+    top:10%;
+    left:30%;
+    text-align: center;
+    margin:0 auto;
+}
+
+.quotes {
+    display: none;
+    font-family: '微软雅黑';
+    color:#722f37;
+}

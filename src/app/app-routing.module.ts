@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'journey',  component: JourneyComponent },
   { path: 'birthday1',  component: BirthDay1Component },
   { path: 'gallery', component: GalleryComponent },
-  { path: 'proposal', component: ProposalComponent }
+  { path: 'youarenotsupposetobehere', component: ProposalComponent }
 ];
 
 @NgModule({
