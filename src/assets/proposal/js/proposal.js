@@ -1,11 +1,8 @@
 function proposal(){
 
-};
-
-function proposal(){
-
     var quotes = $(".quotes");
     var quoteIndex = -1;
+    var dummy = 0;
 
     function showNextQuote() {
         ++quoteIndex;
@@ -50,13 +47,29 @@ function proposal(){
     //     $('#btn-play').click();
     // }
 
-    $(".heart").on('click touchstart', function(){
+    // $(".heart").on('touchstart', function(){
+    //   $(".heart").off();
+    //   $(this).toggleClass('is_animating');
+    //   var vm = $(this);
+    //   setTimeout(function() {
+    //       vm.fadeOut('slow');
+    //
+    //       showNextQuote();
+    //
+    //       $('#btn-play').click();
+    //       $('#btn-play').click();
+    //   }, 1000);
+    // });
+
+    $(".heart").on('click', function(){
+      $(".heart").off();
       $(this).toggleClass('is_animating');
       var vm = $(this);
       setTimeout(function() {
           vm.fadeOut('slow');
 
           showNextQuote();
+
           $('#btn-play').click();
           $('#btn-play').click();
       }, 1000);

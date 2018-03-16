@@ -12,10 +12,18 @@ import { JourneyComponent }   from './journey/journey.component';
 import { BirthDay1Component }   from './birthday1/birthday1.component';
 import { GalleryComponent }   from './gallery/gallery.component';
 import { ProposalComponent }   from './proposal/proposal.component';
+import { CalendarComponent }   from './calendar/calendar.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 import { SidebarModule } from 'primeng/sidebar';
 
+import { ScheduleModule } from 'primeng/schedule';
+
+import * as $ from "jquery";
+import * as moment from 'moment';
+import 'jquery';
+import 'moment';
+import 'fullcalendar';
 
 @NgModule({
   imports: [
@@ -24,7 +32,8 @@ import { SidebarModule } from 'primeng/sidebar';
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SidebarModule
+    SidebarModule,
+    ScheduleModule
   ],
   declarations: [
     AppComponent,
@@ -33,7 +42,8 @@ import { SidebarModule } from 'primeng/sidebar';
     JourneyComponent,
     BirthDay1Component,
     GalleryComponent,
-    ProposalComponent
+    ProposalComponent,
+    CalendarComponent
   ],
   bootstrap: [ AppComponent ]
 })

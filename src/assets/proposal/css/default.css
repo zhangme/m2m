@@ -48,8 +48,8 @@
 
 #words{
     position: absolute;
-    top:10%;
-    left:30%;
+    top:30%;
+    width:100vw;
     text-align: center;
     margin:0 auto;
 }
