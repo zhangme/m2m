@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 
 import 'fullcalendar';
-
+import * as moment from 'moment';
 
 declare var clearProcess: any;
 
@@ -15,10 +15,10 @@ export class CalendarComponent implements AfterViewInit {
 
     events: any[] = [];
     header: any;
+    today = moment().format('YYYY-MM-DD');
 
     ngAfterViewInit(){
         clearProcess();
-
     }
 
     ngOnInit() {
@@ -36,7 +36,13 @@ export class CalendarComponent implements AfterViewInit {
     addEvents(){
         this.events.push(
             {
-                "title": "漫长旅途的第一次陪伴",
+                "title": "情人节",
+                "start": this.today,
+            }
+        );
+        this.events.push(
+            {
+                "title": "漫长旅途的起始",
                 "start": "2017-11-18",
                 "end": "2017-11-25"
             }
@@ -45,7 +51,7 @@ export class CalendarComponent implements AfterViewInit {
             {
                 "title": "相约日本",
                 "start": "2018-05-27",
-                "end": "2018-06-02"
+                "end": "2018-06-03"
             }
         );
     }
