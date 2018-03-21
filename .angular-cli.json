@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
         "../node_modules/font-awesome/css/font-awesome.min.css",
         "../node_modules/primeng/resources/primeng.css",
         "../node_modules/primeng/resources/themes/omega/theme.css",
@@ -28,7 +29,8 @@
       "scripts": [
           "../node_modules/jquery/dist/jquery.min.js",
           "../node_modules/moment/min/moment.min.js",
-          "../node_modules/fullcalendar/dist/fullcalendar.min.js"
+          "../node_modules/fullcalendar/dist/fullcalendar.min.js",
+          "../node_modules/bootstrap/js/dist/carousel.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

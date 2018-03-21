@@ -33,11 +33,18 @@ export class CalendarComponent implements AfterViewInit {
 
     }
 
+    eventClickHandler(event) {
+        if (event.url) {
+          window.open(event.url);
+          return false;
+        }
+    }
     addEvents(){
         this.events.push(
             {
                 "title": "情人节",
                 "start": this.today,
+                "url":"journey"
             }
         );
         this.events.push(
