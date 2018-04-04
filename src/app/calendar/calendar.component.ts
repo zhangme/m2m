@@ -77,7 +77,7 @@ export class CalendarComponent implements AfterViewInit {
             var date = (2017+i).toString()+"-11-18"
             this.events.push(
                 {
-                    "title": "相恋纪念日",
+                    "title": "💕纪念日",
                     "start": date
                 }
             );
@@ -86,7 +86,34 @@ export class CalendarComponent implements AfterViewInit {
             var date = (2017+i).toString()+"-11-19"
             this.events.push(
                 {
-                    "title": "初吻纪念日😚",
+                    "title": "😚纪念日",
+                    "start": date
+                }
+            );
+        };
+        for (var i = 0; i < 100; i++) {
+            var date = (2018+i).toString()+"-05-29"
+            this.events.push(
+                {
+                    "title": "💍纪念日",
+                    "start": date
+                }
+            );
+        };
+        for (var i = 0; i < 100; i++) {
+            var date = (2019+i).toString()+"-07-22"
+            this.events.push(
+                {
+                    "title": "📕纪念日",
+                    "start": date
+                }
+            );
+        };
+        for (var i = 0; i < 100; i++) {
+            var date = (2020+i).toString()+"-06-22"
+            this.events.push(
+                {
+                    "title": "💒纪念日",
                     "start": date
                 }
             );

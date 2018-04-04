@@ -10,14 +10,14 @@ import { ProposalComponent }   from './proposal/proposal.component';
 import { CalendarComponent }   from './calendar/calendar.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'lovetree', pathMatch: 'full' },
+  { path: '', redirectTo: 'proposal', pathMatch: 'full' },
   { path: 'lovetree', component: LoveTreeComponent },
   { path: 'home',  component: HomeComponent },
   { path: 'journey',  component: JourneyComponent },
   { path: 'birthday1',  component: BirthDay1Component },
   { path: 'gallery', component: GalleryComponent },
   { path: 'calendar', component: CalendarComponent },
-  { path: 'youarenotsupposetobehere', component: ProposalComponent }
+  { path: 'proposal', component: ProposalComponent }
 ];
 
 @NgModule({
