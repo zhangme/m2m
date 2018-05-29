@@ -95,6 +95,15 @@ export class CalendarComponent implements AfterViewInit {
             var date = (2018+i).toString()+"-05-28"
             this.events.push(
                 {
+                    "title": "🙈纪念日",
+                    "start": date
+                }
+            );
+        };
+        for (var i = 0; i < 100; i++) {
+            var date = (2018+i).toString()+"-05-29"
+            this.events.push(
+                {
                     "title": "💍纪念日",
                     "start": date
                 }

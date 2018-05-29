@@ -10,7 +10,7 @@ import { ProposalComponent }   from './proposal/proposal.component';
 import { CalendarComponent }   from './calendar/calendar.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'proposal', pathMatch: 'full' },
+  { path: '', redirectTo: 'lovetree', pathMatch: 'full' },
   { path: 'lovetree', component: LoveTreeComponent },
   { path: 'home',  component: HomeComponent },
   { path: 'journey',  component: JourneyComponent },
