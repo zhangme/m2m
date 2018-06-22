@@ -187,7 +187,7 @@ function bd1Main(){
 					if (progress >= str.length) {
 						clearInterval(timer);
 					}
-				}, 60);
+				}, 135);
 			});
 			return this;
 		};
@@ -224,8 +224,8 @@ function bd1Main(){
 
 	function adjustWordsPosition() {
 		$('#words').css("position", "absolute");
-		$('#words').css("top", $("#garden").position().top + 195);
-		$('#words').css("left", $("#garden").position().left + 70);
+		$('#words').css("top", $("#garden").position().top + 185);
+		$('#words').css("left", $("#garden").position().left - 350);
 	}
 
 
