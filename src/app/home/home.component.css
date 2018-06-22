@@ -19,7 +19,8 @@ body{
   font-size:30px;
   text-decoration:none;
   margin:20px auto;
-  transition: color 0.4s
+  transition: color 0.4s;
+  margin-right: 1em;
 }
 .fancy-btn:after{
   content:" ";

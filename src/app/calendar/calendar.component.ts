@@ -113,6 +113,15 @@ export class CalendarComponent implements AfterViewInit {
         //     var date = (2019+i).toString()+"-07-22"
         //     this.events.push(
         //         {
+        //             "title": "🛏️纪念日",
+        //             "start": date
+        //         }
+        //     );
+        // };
+        // for (var i = 0; i < 100; i++) {
+        //     var date = (2019+i).toString()+"-07-22"
+        //     this.events.push(
+        //         {
         //             "title": "📕纪念日",
         //             "start": date
         //         }
