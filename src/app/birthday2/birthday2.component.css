@@ -1,0 +1,65 @@
+#bd2div {
+    height:100vh;
+    background-image: url('../../assets/bd2/images/heartBackground.jpg');
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top:25vh;
+}
+
+.cards {
+    padding-top: 3em;
+}
+.card {
+    width: 50vw;
+    height: 80vh;
+    position: relative;
+    perspective: 100em;
+    float: left;
+    margin: 1em;
+}
+.card:hover .front{
+    transform: rotateY(-80deg);
+}
+.card:hover .back {
+    transform: rotateY(20deg);
+}
+.card:hover .face {
+    transition: all 0.3s ease-out;
+}
+.face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: all 0.5s ease-out;
+    transform-origin: 0 0;
+    border: 0.01em groove black;
+}
+.front {
+    background: #FFF;
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+.back {
+    background: #FFF;
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+
+.back {
+  padding: 3em;
+}
+
+.card:hover .message {
+    transition: all 0.3s ease-out;
+}
+
+.card:hover .message {
+    transform: translate(50px, 100px);
+}

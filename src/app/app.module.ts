@@ -10,6 +10,7 @@ import { LoveTreeComponent }   from './lovetree/lovetree.component';
 import { HomeComponent }   from './home/home.component';
 import { JourneyComponent }   from './journey/journey.component';
 import { BirthDay1Component }   from './birthday1/birthday1.component';
+import { BirthDay2Component }   from './birthday2/birthday2.component';
 import { GalleryComponent }   from './gallery/gallery.component';
 import { ProposalComponent }   from './proposal/proposal.component';
 import { CalendarComponent }   from './calendar/calendar.component';
@@ -41,6 +42,7 @@ import 'fullcalendar';
     HomeComponent,
     JourneyComponent,
     BirthDay1Component,
+    BirthDay2Component,
     GalleryComponent,
     ProposalComponent,
     CalendarComponent
