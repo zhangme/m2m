@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 
+declare var clearProcess: any;
 
 @Component({
   selector: 'birthday2-component',
@@ -7,7 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: [ './birthday2.component.css' ]
 })
 
-export class BirthDay2Component{
-
+export class BirthDay2Component implements AfterViewInit{
+    ngAfterViewInit(){
+        clearProcess();
+    }
 
 }

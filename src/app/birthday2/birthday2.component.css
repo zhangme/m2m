@@ -39,7 +39,7 @@
     backface-visibility: hidden;
     transition: all 0.5s ease-out;
     transform-origin: 0 0;
-    border: 0.01em groove black;
+    border: 0.01em groove gray;
 }
 .front {
     background: #FFF;
@@ -61,5 +61,9 @@
 }
 
 .card:hover .message {
-    transform: translate(50px, 100px);
+    transform: translate(20em, 5em);
+}
+
+.message img{
+    width:80%;
 }

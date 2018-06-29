@@ -2,3 +2,17 @@ iframe {
     display: block;
     margin: auto;
 }
+#gallery p-fieldset{
+    margin:2em;
+}
+
+#gallery /deep/ legend {
+    width:10vw;
+    font-size: 1em;
+    background-color: #ebedf0;
+}
+
+#gallery /deep/ fieldset {
+    width:90vw;
+    margin-left:3vw;
+}

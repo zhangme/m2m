@@ -16,9 +16,12 @@ import { ProposalComponent }   from './proposal/proposal.component';
 import { CalendarComponent }   from './calendar/calendar.component';
 
 import { AppRoutingModule }     from './app-routing.module';
-import { SidebarModule } from 'primeng/sidebar';
 
+import { SidebarModule } from 'primeng/sidebar';
 import { ScheduleModule } from 'primeng/schedule';
+import { LightboxModule } from 'primeng/lightbox';
+import { FieldsetModule } from 'primeng/fieldset';
+
 
 import * as $ from "jquery";
 import * as moment from 'moment';
@@ -34,7 +37,9 @@ import 'fullcalendar';
     AppRoutingModule,
     BrowserAnimationsModule,
     SidebarModule,
-    ScheduleModule
+    ScheduleModule,
+    LightboxModule,
+    FieldsetModule
   ],
   declarations: [
     AppComponent,
