@@ -61,6 +61,20 @@ export class CalendarComponent implements AfterViewInit {
                 "end": "2018-06-03"
             }
         );
+        this.events.push(
+            {
+                "title": "订婚之旅",
+                "start": "2018-11-11",
+                "end": "2018-11-24"
+            }
+        );
+        this.events.push(
+            {
+                "title": "订婚",
+                "start": "2018-11-17",
+                "end": "2018-11-17"
+            }
+        );
     }
 
     addAnniversary(){
@@ -109,15 +123,15 @@ export class CalendarComponent implements AfterViewInit {
                 }
             );
         };
-        // for (var i = 0; i < 100; i++) {
-        //     var date = (2019+i).toString()+"-07-22"
-        //     this.events.push(
-        //         {
-        //             "title": "🛏️纪念日",
-        //             "start": date
-        //         }
-        //     );
-        // };
+        for (var i = 0; i < 100; i++) {
+            var date = (2018+i).toString()+"-11-12"
+            this.events.push(
+                {
+                    "title": "🛏️纪念日",
+                    "start": date
+                }
+            );
+        };
         // for (var i = 0; i < 100; i++) {
         //     var date = (2019+i).toString()+"-07-22"
         //     this.events.push(
