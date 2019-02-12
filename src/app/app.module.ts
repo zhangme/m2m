@@ -14,6 +14,7 @@ import { BirthDay2Component }   from './birthday2/birthday2.component';
 import { GalleryComponent }   from './gallery/gallery.component';
 import { ProposalComponent }   from './proposal/proposal.component';
 import { CalendarComponent }   from './calendar/calendar.component';
+import { TimeLineComponent }   from './timeline/timeline.component';
 
 import { AppRoutingModule }     from './app-routing.module';
 
@@ -50,7 +51,8 @@ import 'fullcalendar';
     BirthDay2Component,
     GalleryComponent,
     ProposalComponent,
-    CalendarComponent
+    CalendarComponent,
+    TimeLineComponent
   ],
   bootstrap: [ AppComponent ]
 })

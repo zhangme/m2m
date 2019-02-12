@@ -354,7 +354,7 @@ function bd1Main(){
          audio.currentTime = 0;
          $('#btn-play').click();
     });
-    window.onload = function(){ $('#btn-play').click();$('#btn-play').click(); }
+    window.onload = function(){ $('#btn-play').click();$('#btn-play').click(); audio.play(); }
     $(function () {
         var isPlaying = function (audio) {
             return !audio.paused;

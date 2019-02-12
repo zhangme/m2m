@@ -117,7 +117,7 @@ function showCanvas(){
 
         // 会有闪烁不得意这样做, (＞﹏＜)
         canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
-        canvas.css("background", "#ffe");
+        canvas.css("background", "#e9f0f5");
         $await(Jscex.Async.sleep(300));
         canvas.css("background", "none");
     }));

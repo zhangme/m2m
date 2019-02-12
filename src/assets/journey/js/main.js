@@ -35,7 +35,7 @@ function routeAlbum(){
 
     var start = function() {
         var index = 0;
-        var rate = 6000;
+        var rate = 6200;
         $('#say').text(says[(index++) % says.length]);
         var _play = function () {
             $('#say').hide();

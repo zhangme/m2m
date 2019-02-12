@@ -9,6 +9,7 @@ import { BirthDay2Component }   from './birthday2/birthday2.component';
 import { GalleryComponent }   from './gallery/gallery.component';
 import { ProposalComponent }   from './proposal/proposal.component';
 import { CalendarComponent }   from './calendar/calendar.component';
+import { TimeLineComponent }   from './timeline/timeline.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'lovetree', pathMatch: 'full' },
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'birthday2',  component: BirthDay2Component },
   { path: 'gallery', component: GalleryComponent },
   { path: 'calendar', component: CalendarComponent },
-  { path: 'proposal', component: ProposalComponent }
+  { path: 'proposal', component: ProposalComponent },
+  { path: 'timeline',  component: TimeLineComponent }
 ];
 
 @NgModule({

@@ -22,6 +22,10 @@ iframe {
     width:25%;
 }
 
+#gallery /deep/ .ui-widget-content {
+    background: #ffe;
+}
+
 
 
 a {
